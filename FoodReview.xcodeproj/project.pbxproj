@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		EA72F2B426536BCF0084F702 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F2B326536BCF0084F702 /* AppDelegate.m */; };
 		EA72F2B726536BCF0084F702 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F2B626536BCF0084F702 /* SceneDelegate.m */; };
-		EA72F2BA26536BCF0084F702 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F2B926536BCF0084F702 /* ViewController.m */; };
 		EA72F2BD26536BCF0084F702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA72F2BB26536BCF0084F702 /* Main.storyboard */; };
 		EA72F2BF26536BD30084F702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA72F2BE26536BD30084F702 /* Assets.xcassets */; };
 		EA72F2C226536BD30084F702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA72F2C026536BD30084F702 /* LaunchScreen.storyboard */; };
 		EA72F2C526536BD30084F702 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F2C426536BD30084F702 /* main.m */; };
 		EA72F2CF26536BD40084F702 /* FoodReviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F2CE26536BD40084F702 /* FoodReviewTests.m */; };
 		EA72F2DA26536BD40084F702 /* FoodReviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F2D926536BD40084F702 /* FoodReviewUITests.m */; };
+		EA72F2F52653FD0E0084F702 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F2F42653FD0E0084F702 /* TabBarController.m */; };
+		EA72F2F92653FD490084F702 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F2F82653FD490084F702 /* HomeViewController.m */; };
+		EA72F2FC265400080084F702 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F2FB265400080084F702 /* VideoViewController.m */; };
+		EA72F2FF2654003B0084F702 /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F2FE2654003B0084F702 /* CreateViewController.m */; };
+		EA72F3022654005B0084F702 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F3012654005B0084F702 /* UserViewController.m */; };
+		EA72F308265404900084F702 /* UIColor+MSCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F307265404900084F702 /* UIColor+MSCAdditions.m */; };
+		EA72F30C265418600084F702 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA72F30B265418600084F702 /* NotificationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +47,6 @@
 		EA72F2B326536BCF0084F702 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EA72F2B526536BCF0084F702 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		EA72F2B626536BCF0084F702 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		EA72F2B826536BCF0084F702 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EA72F2B926536BCF0084F702 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EA72F2BC26536BCF0084F702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA72F2BE26536BD30084F702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA72F2C126536BD30084F702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +58,21 @@
 		EA72F2D526536BD40084F702 /* FoodReviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodReviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA72F2D926536BD40084F702 /* FoodReviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodReviewUITests.m; sourceTree = "<group>"; };
 		EA72F2DB26536BD40084F702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA72F2F32653FD0E0084F702 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		EA72F2F42653FD0E0084F702 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		EA72F2F72653FD490084F702 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EA72F2F82653FD490084F702 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		EA72F2FA265400080084F702 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		EA72F2FB265400080084F702 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		EA72F2FD2654003B0084F702 /* CreateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
+		EA72F2FE2654003B0084F702 /* CreateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
+		EA72F3002654005B0084F702 /* UserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		EA72F3012654005B0084F702 /* UserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		EA72F306265404900084F702 /* UIColor+MSCAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MSCAdditions.h"; sourceTree = "<group>"; };
+		EA72F307265404900084F702 /* UIColor+MSCAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MSCAdditions.m"; sourceTree = "<group>"; };
+		EA72F309265405780084F702 /* FoodReview-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodReview-PrefixHeader.pch"; sourceTree = "<group>"; };
+		EA72F30A265418600084F702 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		EA72F30B265418600084F702 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +123,13 @@
 		EA72F2B126536BCF0084F702 /* FoodReview */ = {
 			isa = PBXGroup;
 			children = (
-				EA72F2B226536BCF0084F702 /* AppDelegate.h */,
-				EA72F2B326536BCF0084F702 /* AppDelegate.m */,
-				EA72F2B526536BCF0084F702 /* SceneDelegate.h */,
-				EA72F2B626536BCF0084F702 /* SceneDelegate.m */,
-				EA72F2B826536BCF0084F702 /* ViewController.h */,
-				EA72F2B926536BCF0084F702 /* ViewController.m */,
+				EA72F2F22653FCBD0084F702 /* Scene */,
+				EA72F2EF2653FC6A0084F702 /* Model */,
+				EA72F2F02653FC710084F702 /* View */,
+				EA72F2EE2653FC500084F702 /* Controller */,
+				EA72F2F12653FC840084F702 /* Resource */,
 				EA72F2BB26536BCF0084F702 /* Main.storyboard */,
-				EA72F2BE26536BD30084F702 /* Assets.xcassets */,
-				EA72F2C026536BD30084F702 /* LaunchScreen.storyboard */,
-				EA72F2C326536BD30084F702 /* Info.plist */,
-				EA72F2C426536BD30084F702 /* main.m */,
+				EA72F309265405780084F702 /* FoodReview-PrefixHeader.pch */,
 			);
 			path = FoodReview;
 			sourceTree = "<group>";
@@ -135,6 +150,63 @@
 				EA72F2DB26536BD40084F702 /* Info.plist */,
 			);
 			path = FoodReviewUITests;
+			sourceTree = "<group>";
+		};
+		EA72F2EE2653FC500084F702 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA72F2F32653FD0E0084F702 /* TabBarController.h */,
+				EA72F2F42653FD0E0084F702 /* TabBarController.m */,
+				EA72F2F72653FD490084F702 /* HomeViewController.h */,
+				EA72F2F82653FD490084F702 /* HomeViewController.m */,
+				EA72F2FA265400080084F702 /* VideoViewController.h */,
+				EA72F2FB265400080084F702 /* VideoViewController.m */,
+				EA72F2FD2654003B0084F702 /* CreateViewController.h */,
+				EA72F2FE2654003B0084F702 /* CreateViewController.m */,
+				EA72F3002654005B0084F702 /* UserViewController.h */,
+				EA72F3012654005B0084F702 /* UserViewController.m */,
+				EA72F30A265418600084F702 /* NotificationViewController.h */,
+				EA72F30B265418600084F702 /* NotificationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA72F2EF2653FC6A0084F702 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA72F2F02653FC710084F702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA72F2F12653FC840084F702 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EA72F2C426536BD30084F702 /* main.m */,
+				EA72F2C326536BD30084F702 /* Info.plist */,
+				EA72F2C026536BD30084F702 /* LaunchScreen.storyboard */,
+				EA72F2BE26536BD30084F702 /* Assets.xcassets */,
+				EA72F306265404900084F702 /* UIColor+MSCAdditions.h */,
+				EA72F307265404900084F702 /* UIColor+MSCAdditions.m */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EA72F2F22653FCBD0084F702 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EA72F2B226536BCF0084F702 /* AppDelegate.h */,
+				EA72F2B326536BCF0084F702 /* AppDelegate.m */,
+				EA72F2B526536BCF0084F702 /* SceneDelegate.h */,
+				EA72F2B626536BCF0084F702 /* SceneDelegate.m */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +338,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA72F2BA26536BCF0084F702 /* ViewController.m in Sources */,
 				EA72F2B426536BCF0084F702 /* AppDelegate.m in Sources */,
+				EA72F2F52653FD0E0084F702 /* TabBarController.m in Sources */,
+				EA72F308265404900084F702 /* UIColor+MSCAdditions.m in Sources */,
+				EA72F30C265418600084F702 /* NotificationViewController.m in Sources */,
+				EA72F2FC265400080084F702 /* VideoViewController.m in Sources */,
+				EA72F2FF2654003B0084F702 /* CreateViewController.m in Sources */,
 				EA72F2C526536BD30084F702 /* main.m in Sources */,
+				EA72F3022654005B0084F702 /* UserViewController.m in Sources */,
+				EA72F2F92653FD490084F702 /* HomeViewController.m in Sources */,
 				EA72F2B726536BCF0084F702 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,14 +521,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NF448AL5B2;
-				INFOPLIST_FILE = FoodReview/Info.plist;
+				GCC_PREFIX_HEADER = "FoodReview/FoodReview-PrefixHeader.pch";
+				INFOPLIST_FILE = FoodReview/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tai.FoodReview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -461,14 +540,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NF448AL5B2;
-				INFOPLIST_FILE = FoodReview/Info.plist;
+				GCC_PREFIX_HEADER = "FoodReview/FoodReview-PrefixHeader.pch";
+				INFOPLIST_FILE = FoodReview/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tai.FoodReview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
