@@ -6,6 +6,7 @@
 //
 
 #import "TabBarController.h"
+#import "LandingViewController.h"
 
 @interface TabBarController ()<UITabBarControllerDelegate>
 
@@ -66,7 +67,7 @@
 
 - (void)initialize {
     self.delegate = self;
-    
+    [[FIRAuth auth] signOut:nil];
 }
 
 #pragma mark - SetupAppearances
@@ -96,7 +97,7 @@
     [UINavigationBar.appearance setBarTintColor: UIColor.systemGroupedBackgroundColor];
     [UINavigationBar.appearance setTintColor: UIColor.systemGroupedBackgroundColor];
     [UINavigationBar.appearance setBackgroundColor: UIColor.systemGroupedBackgroundColor];
-    [UINavigationBar.appearance setLargeTitleTextAttributes: @{NSForegroundColorAttributeName: UIColor.labelColor , NSFontAttributeName: [UIFont boldSystemFontOfSize:36.0]}];
+    [UINavigationBar.appearance setLargeTitleTextAttributes: @{NSForegroundColorAttributeName: UIColor.labelColor , NSFontAttributeName: [UIFont boldSystemFontOfSize:32.0]}];
     [UINavigationBar.appearance setTitleTextAttributes: @{NSForegroundColorAttributeName: UIColor.labelColor, NSFontAttributeName: [UIFont boldSystemFontOfSize:20.0]}];
 }
 
@@ -116,11 +117,11 @@
     return _homeViewController;
 }
 
-- (VideoViewController *)videoViewController {
-    if (!_videoViewController) {
-        _videoViewController = [[VideoViewController alloc] init];
+- (SearchViewController *)searchViewController {
+    if (!_searchViewController) {
+        _searchViewController = [[SearchViewController alloc] init];
     }
-    return _videoViewController;
+    return _searchViewController;
 }
 
 - (CreateViewController *)createViewController {
@@ -147,24 +148,24 @@
 - (void)setupViews {
     UIImageSymbolConfiguration *configuration = [UIImageSymbolConfiguration configurationWithPointSize:20.0 weight:UIImageSymbolWeightRegular];
     self.homeViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage systemImageNamed:@"house" withConfiguration:configuration] selectedImage:[UIImage systemImageNamed:@"house.fill" withConfiguration:configuration]];
-    self.videoViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage systemImageNamed:@"play.tv" withConfiguration:configuration] selectedImage:[UIImage systemImageNamed:@"play.tv.fill" withConfiguration:configuration]];
+    self.searchViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage systemImageNamed:@"magnifyingglass" withConfiguration:configuration] selectedImage:[UIImage systemImageNamed:@"magnifyingglass" withConfiguration:configuration]];
     self.createViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage systemImageNamed:@"plus.circle" withConfiguration:configuration] selectedImage:[UIImage systemImageNamed:@"plus.circle.fill" withConfiguration:configuration]];
     self.notificationViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage systemImageNamed:@"bell" withConfiguration:configuration] selectedImage:[UIImage systemImageNamed:@"bell.fill" withConfiguration:configuration]];
     self.userViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage systemImageNamed:@"person" withConfiguration:configuration] selectedImage:[UIImage systemImageNamed:@"person.fill" withConfiguration:configuration]];
     
     self.homeViewController.tabBarItem.tag = 0;
-    self.videoViewController.tabBarItem.tag = 1;
+    self.searchViewController.tabBarItem.tag = 1;
     self.createViewController.tabBarItem.tag = 2;
     self.notificationViewController.tabBarItem.tag = 3;
     self.userViewController.tabBarItem.tag = 4;
     
     UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController: self.homeViewController];
-    UINavigationController *videoNav = [[UINavigationController alloc] initWithRootViewController: self.videoViewController];
+    UINavigationController *searchNav = [[UINavigationController alloc] initWithRootViewController: self.searchViewController];
     UINavigationController *createNav = [[UINavigationController alloc] initWithRootViewController: self.createViewController];
     UINavigationController *notiNav = [[UINavigationController alloc] initWithRootViewController: self.notificationViewController];
     UINavigationController *userNav = [[UINavigationController alloc] initWithRootViewController: self.userViewController];
     
-    self.viewControllers = @[homeNav, videoNav, createNav, notiNav, userNav];
+    self.viewControllers = @[homeNav, searchNav, createNav, notiNav, userNav];
 }
 
 #pragma mark - Supporting Methods
@@ -175,7 +176,7 @@
         if (selectedItem.tag == 0) {
             return self.homeViewController.navigationController;
         } else if (selectedItem.tag == 1) {
-            return self.videoViewController.navigationController;
+            return self.searchViewController.navigationController;
         } else if (selectedItem.tag == 2) {
             return self.createViewController.navigationController;
         } else if (selectedItem.tag == 3) {
@@ -202,6 +203,15 @@
 #pragma mark - UITabbarControllerDelegate
 
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    if (viewController.tabBarItem.tag > 2) {
+        if (FIRAuth.auth.currentUser == nil) {
+            LandingViewController *vc = [[LandingViewController alloc] init];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+            nav.modalPresentationStyle = UIModalPresentationFullScreen;
+            [viewController presentViewController:nav animated:YES completion:nil];
+        }
+    }
+    
     return YES;
 }
 

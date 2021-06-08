@@ -5,13 +5,13 @@
 //  Created by MTT on 18/05/2021.
 //
 
-#import "VideoViewController.h"
+#import "SearchViewController.h"
 
-@interface VideoViewController ()
+@interface SearchViewController ()
 
 @end
 
-@implementation VideoViewController
+@implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

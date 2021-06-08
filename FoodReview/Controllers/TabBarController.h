@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "HomeViewController.h"
-#import "VideoViewController.h"
+#import "SearchViewController.h"
 #import "CreateViewController.h"
 #import "NotificationViewController.h"
 #import "UserViewController.h"
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) UIView *statusBar;
 @property (nonatomic) HomeViewController *homeViewController;
-@property (nonatomic) VideoViewController *videoViewController;
+@property (nonatomic) SearchViewController *searchViewController;
 @property (nonatomic) CreateViewController *createViewController;
 @property (nonatomic) NotificationViewController *notificationViewController;
 @property (nonatomic) UserViewController *userViewController;

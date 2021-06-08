@@ -17,6 +17,10 @@
     return [UIColor colorWithHex:0xfd2959];
 }
 
++ (UIColor *)buttonColor {
+    return [UIColor colorWithHex:0xff5a66];
+}
+
 + (UIColor *)steelColor {
     return [UIColor colorWithRed:128.0f / 255.0f green:130.0f / 255.0f blue:138.0f / 255.0f alpha:1.0f];
 }

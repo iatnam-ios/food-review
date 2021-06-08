@@ -17,5 +17,6 @@
 + (UIColor *)colorWithHex:(NSInteger)hex;
 + (UIColor *)highlightedColor;
 + (UIColor *)selectedColor;
++ (UIColor *)buttonColor;
 
 @end

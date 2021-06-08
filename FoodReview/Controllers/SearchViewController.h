@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VideoViewController : UIViewController
+@interface SearchViewController : UIViewController
 
 @end
 

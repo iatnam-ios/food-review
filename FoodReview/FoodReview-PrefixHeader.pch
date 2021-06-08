@@ -5,8 +5,14 @@
 //  Created by MTT on 18/05/2021.
 //
 
-
+#import <Masonry/Masonry.h>
+#import <SDWebImage/UIImageView+Webcache.h>
+#import "Defines.h"
+#import "Common.h"
+#import "UIFont+Dynamics.h"
 #import "UIColor+MSCAdditions.h"
+
+@import Firebase;
 
 #ifndef FoodReview_PrefixHeader_pch
 #define FoodReview_PrefixHeader_pch

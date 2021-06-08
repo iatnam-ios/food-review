@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,16 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="lrS-al-R69">
-                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza-monster.png" translatesAutoresizingMaskIntoConstraints="NO" id="lrS-al-R69">
+                                <rect key="frame" x="77" y="318" width="260" height="260"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="K1z-qP-hhB"/>
-                                    <constraint firstAttribute="height" constant="240" id="bsb-CO-kWo"/>
+                                    <constraint firstAttribute="width" constant="260" id="K1z-qP-hhB"/>
+                                    <constraint firstAttribute="height" constant="260" id="bsb-CO-kWo"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99199998379999998" green="0.16099999849999999" blue="0.34900000689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lrS-al-R69" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2bg-f4-eiO"/>
                             <constraint firstItem="lrS-al-R69" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kdx-JV-hJ1"/>
@@ -38,9 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_logo" width="512" height="512"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="pizza-monster.png" width="600" height="600"/>
     </resources>
 </document>
