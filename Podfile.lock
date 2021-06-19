@@ -234,6 +234,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
+  - Expecta (1.0.6)
   - Firebase/Analytics (8.0.0):
     - Firebase/Core
   - Firebase/Auth (8.0.0):
@@ -244,6 +245,9 @@ PODS:
     - FirebaseAnalytics (~> 8.0.0)
   - Firebase/CoreOnly (8.0.0):
     - FirebaseCore (= 8.0.0)
+  - Firebase/Database (8.0.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 8.0.0)
   - Firebase/Firestore (8.0.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 8.0.0)
@@ -291,6 +295,9 @@ PODS:
     - GoogleUtilities/Environment (~> 7.4)
     - GoogleUtilities/Logger (~> 7.4)
     - nanopb (~> 2.30908.0)
+  - FirebaseDatabase (8.0.0):
+    - FirebaseCore (~> 8.0)
+    - leveldb-library (~> 1.22)
   - FirebaseFirestore (8.0.0):
     - abseil/algorithm (= 0.20200225.0)
     - abseil/base (= 0.20200225.0)
@@ -391,18 +398,22 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
+  - OCMock (3.8.1)
   - PromisesObjC (1.2.12)
   - Reachability (3.2)
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
+  - Specta (1.0.7)
   - Toast (4.0.0)
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0
   - AFNetworking
+  - Expecta (~> 1.0)
   - Firebase/Analytics
   - Firebase/Auth
+  - Firebase/Database
   - Firebase/Firestore
   - Firebase/Storage
   - FirebaseUI/Auth
@@ -413,8 +424,10 @@ DEPENDENCIES:
   - Masonry
   - MBProgressHUD
   - MJRefresh
+  - OCMock
   - Reachability
   - SDWebImage
+  - Specta (~> 1.0)
   - Toast
 
 SPEC REPOS:
@@ -423,11 +436,13 @@ SPEC REPOS:
     - ActionSheetPicker-3.0
     - AFNetworking
     - BoringSSL-GRPC
+    - Expecta
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
     - FirebaseCore
     - FirebaseCoreDiagnostics
+    - FirebaseDatabase
     - FirebaseFirestore
     - FirebaseInstallations
     - FirebaseStorage
@@ -446,9 +461,11 @@ SPEC REPOS:
     - MBProgressHUD
     - MJRefresh
     - nanopb
+    - OCMock
     - PromisesObjC
     - Reachability
     - SDWebImage
+    - Specta
     - Toast
 
 SPEC CHECKSUMS:
@@ -456,11 +473,13 @@ SPEC CHECKSUMS:
   ActionSheetPicker-3.0: 36da254b97a09ff89679ecb8b8510bd3e5bdc773
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Firebase: 73c3e3b216ec1ecbc54d2ffdd4670c65c749edb1
   FirebaseAnalytics: dcb92c7c9ef4fa7ffac276e8f87bd4fc8c97f1b8
   FirebaseAuth: b8cd992fca5b53dc6eec09e873a3f375f000c5a1
   FirebaseCore: 3f09591d51292843e2a46f18358d60bf4e996255
   FirebaseCoreDiagnostics: a31d987ba0fe16d59886a5dbadc2f1de871f88c8
+  FirebaseDatabase: 363961e25451425be8b14bb8801a592515ec58f2
   FirebaseFirestore: 7f6576eaca9f821e864c3e917d68aa99f4e6b613
   FirebaseInstallations: c4aab1005d6547b00a7529777fe52f5d4d45165b
   FirebaseStorage: 61bcd27880fa17362f68be67d3683d04bfd7b1c7
@@ -479,11 +498,13 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: d2c1970d1cf6e77fcfcdfe76c943dfab8dbfa5c1
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  OCMock: 29f6e52085b4e7d9b075cbf03ed7c3112f82f934
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: 3a7e44dfd85abcfba2ae6bae2dae256cfbd03621
+PODFILE CHECKSUM: 2973ef3f2f10129412981b35debdc5b559b6e356
 
 COCOAPODS: 1.10.1

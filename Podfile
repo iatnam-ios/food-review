@@ -7,22 +7,31 @@ target 'FoodReview' do
 
   # Pods for FoodReview
 
-pod 'Toast'
-pod 'MBProgressHUD'
-pod 'AFNetworking'
-pod 'SDWebImage'
-pod 'MarqueeLabel', '3.2.0'
-pod 'Masonry'
-pod 'Reachability'
-pod 'ActionSheetPicker-3.0'
-pod 'JXPagingView/Pager'
-pod 'JXCategoryView'
-pod 'MJRefresh'
-pod 'Firebase/Analytics'
-pod 'Firebase/Auth'
-pod 'FirebaseUI/Auth'
-pod 'FirebaseUI/Email'
-pod 'Firebase/Firestore'
-pod 'Firebase/Storage'
+  pod 'Toast'
+  pod 'MBProgressHUD'
+  pod 'AFNetworking'
+  pod 'SDWebImage'
+  pod 'MarqueeLabel', '3.2.0'
+  pod 'Masonry'
+  pod 'Reachability'
+  pod 'ActionSheetPicker-3.0'
+  pod 'JXPagingView/Pager'
+  pod 'JXCategoryView'
+  pod 'MJRefresh'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'FirebaseUI/Auth'
+  pod 'FirebaseUI/Email'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
+  
+  
+  target 'FoodReviewTests' do
+      inherit! :search_paths
+      pod 'OCMock'
+      pod 'Specta', '~> 1.0'
+      pod 'Expecta', '~> 1.0'
+  end
 
 end
