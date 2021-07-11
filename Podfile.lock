@@ -384,6 +384,7 @@ PODS:
     - gRPC-Core/Interface (= 1.28.2)
   - gRPC-Core/Interface (1.28.2)
   - GTMSessionFetcher/Core (1.5.0)
+  - HCSStarRatingView (1.5)
   - JXCategoryView (1.5.9)
   - JXPagingView/Pager (2.1.0)
   - leveldb-library (1.22.1)
@@ -418,6 +419,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - FirebaseUI/Auth
   - FirebaseUI/Email
+  - HCSStarRatingView (~> 1.5)
   - JXCategoryView
   - JXPagingView/Pager
   - MarqueeLabel (= 3.2.0)
@@ -453,6 +455,7 @@ SPEC REPOS:
     - "gRPC-C++"
     - gRPC-Core
     - GTMSessionFetcher
+    - HCSStarRatingView
     - JXCategoryView
     - JXPagingView
     - leveldb-library
@@ -490,6 +493,7 @@ SPEC CHECKSUMS:
   "gRPC-C++": 13d8ccef97d5c3c441b7e3c529ef28ebee86fad2
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
+  HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
   JXCategoryView: 2ef9ecfd3735158d009ce02d1f29811aa822da65
   JXPagingView: ef48a5a2392252c68db7999de38f4761a2707e2a
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
@@ -505,6 +509,6 @@ SPEC CHECKSUMS:
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: 2973ef3f2f10129412981b35debdc5b559b6e356
+PODFILE CHECKSUM: 613dfd3333e0f93a47557a92d6ba0c6887574364
 
 COCOAPODS: 1.10.1

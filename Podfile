@@ -12,6 +12,7 @@ target 'FoodReview' do
   pod 'AFNetworking'
   pod 'SDWebImage'
   pod 'MarqueeLabel', '3.2.0'
+  pod 'HCSStarRatingView', '~> 1.5'
   pod 'Masonry'
   pod 'Reachability'
   pod 'ActionSheetPicker-3.0'
